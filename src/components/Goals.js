@@ -9,10 +9,10 @@ function generateGoals(arr){
 }
 
 let goals = [
-    {name: "goal1", timeFrame: "January 1, 2020"},
-    {name: "goal2", timeFrame: "January 1, 2021"},
-    {name: "goal3", timeFrame: "June 1, 2022"},
-    {name: "goal4", timeFrame: "May 1, 2020"},
+    {id: 1, name: "goal1", timeFrame: "January 1, 2020"},
+    {id: 2, name: "goal2", timeFrame: "January 1, 2021"},
+    {id: 3, name: "goal3", timeFrame: "June 1, 2022"},
+    {id: 4, name: "goal4", timeFrame: "May 1, 2020"},
 ]
 
 const Goals = () => {
