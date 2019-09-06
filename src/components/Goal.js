@@ -5,7 +5,7 @@ const Goal = ({goal}) => {
     let {name, timeFrame, id} = goal;
 
     return (
-        <Link to='/goal/${id}' style={{ textDecoration: 'none' }}>
+        <Link to={`/goal/${id}`} style={{ textDecoration: 'none' }}>
             <div className="goal">
                 <h4>{name}</h4>
                 <ul>

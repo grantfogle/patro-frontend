@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Navigation from './components/Navigation';
 import Goals from './components/Goals';
-import Goal from './components/Goal';
+import ShowGoal from './components/ShowGoal';
 
 
 function App() {
@@ -14,7 +14,8 @@ function App() {
       <div>
         <Route exact path="/" component={() => <Dashboard />} />
         <Route exact path="/goals" component={() => <Goals />} />
-        <Route path="/goal/:id" component={Goal}/>
+        {/* return <ShowMovie movies={this.state.movies} {...props} editMovie={this.editMovie} handleInput={this.handleInput} /> */}
+        <Route path="/goal/:id" component={() => <ShowGoal />}/>
       </div>
       {/* <Dashboard />
           <Goals /> */}
