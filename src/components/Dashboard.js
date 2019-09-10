@@ -17,7 +17,6 @@ class Dashboard extends Component {
                         <li>Move out of the country</li>
                         <li>Lift weights till you get strong</li>
                     </ul> */}
-                    <p> asdf</p>
                 </div>
                 <Goals></Goals>
             </>
