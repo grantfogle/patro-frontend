@@ -18,7 +18,10 @@ let goals = [
 const Goals = () => {
     return (
         <div className="goals">
-            {generateGoals(goals)}
+            
+                {generateGoals(goals)}
+
+            
         </div>
     );
 }
