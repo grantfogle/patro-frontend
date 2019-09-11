@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Goal = ({goal}) => {
-    let {name, timeFrame, id} = goal;
+    let {name, timeFrame, id, description} = goal;
     let open = false;
     return (
         // <Link to={`/goal/${id}`} style={{ textDecoration: 'none' }}>
@@ -16,7 +16,9 @@ const Goal = ({goal}) => {
 
                 </div>
                 <div className="goal-body" style={ open ? { display:'block'} : {display : 'none'} }>
-                    <p>cats</p>
+                    <p>{description}</p>
+                    
+                    <p>{timeFrame}</p>
                 </div>
 
                 {/* <div className="goal-body">

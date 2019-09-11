@@ -14,6 +14,7 @@ const Navigation = () => {
                 </Link>
                 <li>Add Goal</li>
             </ul>
+            {/* how to write better goals: https://jamesclear.com/goal-setting */}
             {/* User  */}
             <p>User</p>
         </div>
