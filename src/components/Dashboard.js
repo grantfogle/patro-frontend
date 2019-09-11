@@ -6,21 +6,13 @@ import Goals from './Goals';
 class Dashboard extends Component {
     render() {
         return (
-            <>
-                <div className="dashboard">
-                    <h1>Hey, Grant</h1>
-                    <h4>September 5th, 2019</h4>
-                    <p>You have _____ of goals. And are 40% to your goal of ...</p>
-                    {/* <h5>Your current goals:</h5>
-                    <ul>
-                        <li>Lift weights till you get strong</li>
-                        <li>Move out of the country</li>
-                        <li>Lift weights till you get strong</li>
-                    </ul> */}
-                    <p> asdf</p>
+            <div className="dashboard">
+                <div class="dashboard-quote">
+                    <h1 className="text-center"><i className="fa fa-quote-left"></i><i>The happiness of your life depends upon the quality of your thoughts.</i> <i className="fa fa-quote-right"></i></h1>
+                    <h4 className="text-right">Marcus Aureileus</h4>
                 </div>
                 <Goals></Goals>
-            </>
+            </div>
         );
     }
 }

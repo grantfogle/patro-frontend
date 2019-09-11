@@ -3,20 +3,39 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Goal = ({goal}) => {
     let {name, timeFrame, id} = goal;
-
+    let open = false;
     return (
-        <Link to={`/goal/${id}`} style={{ textDecoration: 'none' }}>
+        // <Link to={`/goal/${id}`} style={{ textDecoration: 'none' }}>
             <div className="goal">
-                <h4>{name}</h4>
-                <ul>
-                    <li>Dynamic sub goals</li>
-                    <li>Dynamic sub goals</li>
-                    <li>Dynamic sub goals</li>
-                </ul>
+                <div className="goal-header">
+                    <div className="goal-priority">{id}</div>
+                    <h3>{name}</h3>
+                    <p>{timeFrame}</p>
+                    <i className="fa fa-plus"></i>
+                    {/* show more content icon, date */}
+
+                </div>
+                <div className="goal-body" style={ open ? { display:'block'} : {display : 'none'} }>
+                    <p>cats</p>
+                </div>
+
+                {/* <div className="goal-body">
+                    hidden content, sub goals, smart measurements, complete goal and edit goal, so when you open the goal a
+                    a hover edit button will shop up
+
+                    <td>
+                    <ul>
+                        <li>Dynamic sub goals</li>
+                        <li>Dynamic sub goals</li>
+                        <li>Dynamic sub goals</li>
+                    </ul>
+                </td>
                 <p>{timeFrame}</p>
-                <p>Habits/Actions</p>
+                <p>Habits/Actions</p> */}
+                
+                
             </div>
-        </Link>
+        
     );
 }
 
