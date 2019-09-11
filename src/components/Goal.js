@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Goal = ({goal}) => {
     let {name, timeFrame, id} = goal;
-
+    let open = false;
     return (
         // <Link to={`/goal/${id}`} style={{ textDecoration: 'none' }}>
             <div className="goal">
@@ -13,8 +13,11 @@ const Goal = ({goal}) => {
                     <p>{timeFrame}</p>
                     <i className="fa fa-plus"></i>
                     {/* show more content icon, date */}
+
                 </div>
-                {/* <div className="goal-body"> */}
+                <div className="goal-body" style={ open ? { display:'block'} : {display : 'none'} }>
+                    <p>cats</p>
+                </div>
 
                 {/* <div className="goal-body">
                     hidden content, sub goals, smart measurements, complete goal and edit goal, so when you open the goal a
@@ -32,7 +35,7 @@ const Goal = ({goal}) => {
                 
                 
             </div>
-        // </Link>
+        
     );
 }
 
