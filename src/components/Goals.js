@@ -9,19 +9,17 @@ function generateGoals(arr){
 }
 
 let goals = [
-    {id: 1, name: "Get that bread", timeFrame: "January 1, 2020"},
-    {id: 2, name: "Meet a nice lady", timeFrame: "January 1, 2021"},
-    {id: 3, name: "Get swole", timeFrame: "June 1, 2022"},
-    {id: 4, name: "Travel More", timeFrame: "May 1, 2020"},
+    {id: 1, name: "Get that bread", timeFrame: "January 2020", priority: "high"},
+    {id: 2, name: "Meet a nice lady", timeFrame: "January 2021", priority: "medium"},
+    {id: 3, name: "Get swole", timeFrame: "June 2022", priority: "low"},
+    {id: 4, name: "Travel More", timeFrame: "May 2020", priority: "high"},
+    {id: 5, name: "Purple Belt BJJ", timeFrame: "May 2020", priority: "high"},
 ]
 
 const Goals = () => {
     return (
         <div className="goals">
-            
-                {generateGoals(goals)}
-
-            
+            {generateGoals(goals)}
         </div>
     );
 }

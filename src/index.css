@@ -13,8 +13,12 @@ code {
     monospace;
 }
 
+.app {
+  background-image: linear-gradient(to bottom right, #3498db, #f39c12);
+}
+
 .navigation {
-  background-color: #6F5499;
+  /* background-color: #6F5499; */
   color: #fff;
   font-size: 1.4em;
   height: 45px;
@@ -22,6 +26,7 @@ code {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* border-bottom: 1px solid #fff; */
 }
 
 .navigation p {
@@ -40,7 +45,7 @@ code {
 }
 
 .navigation ul li {
-  height: 45px;
+  height: 30px;
   display: flex;
   align-items: center;
   color: white;
@@ -51,19 +56,20 @@ code {
 }
 
 .navigation ul li:hover {
-  background-color: #fff;
-  color: #6F5499;
+  /* background-color: #fff; */
+  /* color: #6F5499; */
   text-decoration: none;
+  border-bottom: 1px solid #fff;
 }
 
 .goals {
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 60vw;
   min-width: 400px;
   margin: 0 auto;
   /* border: solid 2px #2c3e50; */
-  height: 200px;
+  /* height: 200px; */
   /* background-color: #34495e; */
   /* flex-wrap: wrap; */
   /* justify-content: center; */
@@ -73,21 +79,32 @@ code {
   /* width: 300px; */
   height: 40px;
   width: 100%;
-  border: 1px solid #2c3e50;
+  border-bottom: 1px solid #2c3e50;
   /* border: 1px solid #dfdfdf; */
   /* margin: 2em; */
   display: flex;
-  background-color: #dfdfdf;
+  /* background-color: #6F5499; */
+}
 
+.goal:first-child {
+  border-top: 1px solid #2c3e50;
 }
 .goal a {
   margin: 0;
   padding: 0;
 }
-.goal h3 {
+
+.goal-header {
+  width: 100%;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+.goal-header h3 {
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #dfdfdf;
+  /* border-bottom: 1px solid #dfdfdf; */
 }
 .goal ul {
   list-style-type: none;
@@ -97,7 +114,9 @@ code {
 
 .dashboard {
   height: 95vh;
-  background-image: url("https://source.unsplash.com/random/1600x800");
+  /* background-image: url("https://source.unsplash.com/random/1600x800"); */
+  /* background-image: linear-gradient(-90deg, #3498db, #f39c12); */
+  padding: 2em;
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: #2c3e50; */
@@ -105,10 +124,19 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  /* justify-content: space-between; */
 }
 
 .dashboard h1 {
   /* margin: 0; */
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
 }
+.dashboard-quote {
+  width: 60vw;
+  margin-bottom: 4em;
+}
+.dashboard-quote h4 {
+  width: 100%;
+}
+

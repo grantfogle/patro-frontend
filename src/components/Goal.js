@@ -8,10 +8,15 @@ const Goal = ({goal}) => {
         // <Link to={`/goal/${id}`} style={{ textDecoration: 'none' }}>
             <div className="goal">
                 <div className="goal-header">
+                    <div className="goal-priority">{id}</div>
                     <h3>{name}</h3>
+                    <p>{timeFrame}</p>
+                    <i className="fa fa-plus"></i>
                     {/* show more content icon, date */}
                 </div>
-                {/* <div>
+                {/* <div className="goal-body"> */}
+
+                {/* <div className="goal-body">
                     hidden content, sub goals, smart measurements, complete goal and edit goal, so when you open the goal a
                     a hover edit button will shop up
 

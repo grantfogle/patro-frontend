@@ -6,12 +6,13 @@ import Goals from './Goals';
 class Dashboard extends Component {
     render() {
         return (
-            <>
-                <div className="dashboard">
-                    <h1>The happiness of your life depends upon the quality of your thoughts.</h1>
-                    <Goals></Goals>
+            <div className="dashboard">
+                <div class="dashboard-quote">
+                    <h1 className="text-center"><i className="fa fa-quote-left"></i><i>The happiness of your life depends upon the quality of your thoughts.</i> <i className="fa fa-quote-right"></i></h1>
+                    <h4 className="text-right">Marcus Aureileus</h4>
                 </div>
-            </>
+                <Goals></Goals>
+            </div>
         );
     }
 }

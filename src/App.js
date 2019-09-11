@@ -9,9 +9,9 @@ import ShowGoal from './components/ShowGoal';
 function App() {
   return (
     <Router>
-
+      <div className="app">
       <Navigation />
-      <div>
+      
         <Route exact path="/" component={() => <Dashboard />} />
         <Route exact path="/goals" component={() => <Goals />} />
         {/* return <ShowMovie movies={this.state.movies} {...props} editMovie={this.editMovie} handleInput={this.handleInput} /> */}
