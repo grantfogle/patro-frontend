@@ -2,8 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Goal = ({goal}) => {
-    let {name, timeFrame, id} = goal;
-    let open = false;
+    let {name, timeFrame, id, description, displayGoal} = goal;
+
+    
+    
     return (
         // <Link to={`/goal/${id}`} style={{ textDecoration: 'none' }}>
             <div className="goal">
@@ -15,8 +17,9 @@ const Goal = ({goal}) => {
                     {/* show more content icon, date */}
 
                 </div>
-                <div className="goal-body" style={ open ? { display:'block'} : {display : 'none'} }>
-                    <p>cats</p>
+                <div className="goal-body" style={ displayGoal ? { display:'block'} : {display : 'none'} }>
+                    <p>{description}</p>
+                    <p>{timeFrame}</p>
                 </div>
 
                 {/* <div className="goal-body">
