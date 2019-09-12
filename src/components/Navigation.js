@@ -13,7 +13,9 @@ const Navigation = () => {
                 <Link to='/' style={{ textDecoration: 'none' }}>
                     <li>Track Progress</li>
                 </Link>
-                <li>Add a Goal</li>
+                <Link to='/create-goal' style={{ textDecoration: 'none' }}>
+                    <li>Add a Goal</li>
+                </Link>
             </ul>
             {/* how to write better goals: https://jamesclear.com/goal-setting */}
             {/* User  */}

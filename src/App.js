@@ -4,6 +4,7 @@ import Dashboard from './components/Dashboard';
 import Navigation from './components/Navigation';
 import Goals from './components/Goals';
 import ShowGoal from './components/ShowGoal';
+import GoalForm from './components/GoalForm';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       
         <Route exact path="/" component={() => <Dashboard />} />
         <Route exact path="/goals" component={() => <Goals />} />
+        <Route exact path="/create-goal" component={() => <GoalForm />} />
         {/* return <ShowMovie movies={this.state.movies} {...props} editMovie={this.editMovie} handleInput={this.handleInput} /> */}
         <Route path="/goal/:id" component={() => <ShowGoal />}/>
       </div>
