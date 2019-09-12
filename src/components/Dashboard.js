@@ -3,7 +3,12 @@ import Goals from './Goals';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // import '../App.css';
 
-class Dashboard extends Component {
+class Dashboard extends Component {    
+    constructor(props) {
+        super(props);
+        this.state = {date: new Date()};
+    }
+    
     render() {
         return (
             <div className="dashboard">
