@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Goals from './Goals';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-// import '../App.css';
 
 class GoalForm extends Component {    
         constructor(props) {
@@ -15,13 +14,6 @@ class GoalForm extends Component {
         };
 
     }
-    
-    // handleChange = (name, e) =>{ 
-    //     this.setState({description: e.target.value});
-    //     // console.log(e.target.value)
-    //     console.log(this.state.description)
-
-    // }
 
     handleInput = (e) => {
         this.setState({ [e.target.name]: e.target.value })
@@ -29,9 +21,9 @@ class GoalForm extends Component {
     }
     addGoal = () => {
         console.log(this.state)
-        
+
     }
-// (event) => this.setState({ title: event.target.value }
+
     render() {
         return (
             <div className='goal-form'>
