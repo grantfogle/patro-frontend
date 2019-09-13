@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Goals from './Goals';
+import { connect } from 'react-redux'
+import { addGoal } from '../actions'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
@@ -21,7 +23,8 @@ class GoalForm extends Component {
     }
     addGoal = () => {
         console.log(this.state)
-
+        this.props.addGoal(this.state)
+        console.log(this.props.goals)
     }
 
     render() {
@@ -65,4 +68,18 @@ class GoalForm extends Component {
     }
 }
 
-export default GoalForm;
+function mapStateToProps(state) {
+  return {
+    goals: state.goals
+  }
+}
+
+
+const mapDispatchToProps = (dispatch) => ({
+  addGoal: (newGoal) => dispatch(addGoal(newGoal))
+})
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(GoalForm)
