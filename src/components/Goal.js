@@ -1,23 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-const Goal = ({goal}) => {
-    let {name, timeFrame, id, description, displayGoal} = goal;
+class Goal extends Component {    
+        constructor(props) {
+            super(props);
+            this.state = {
+                displayGoal: false,
+            };
+        }
 
+    toggleViewGoal = () => {
+        this.setState({displayGoal: !this.state.displayGoal});
+    }
     
-    
-    return (
+    render(){
+        const { goal: {name, timeFrame, id, description, displayGoal} } = this.props;
+        return (
         // <Link to={`/goal/${id}`} style={{ textDecoration: 'none' }}>
             <div className="goal">
                 <div className="goal-header">
                     <div className="goal-priority">{id}</div>
                     <h3>{name}</h3>
                     <p>{timeFrame}</p>
-                    <i className="fa fa-plus"></i>
+                    <i className="fa fa-plus" onClick={this.toggleViewGoal}></i>
                     {/* show more content icon, date */}
 
                 </div>
-                <div className="goal-body" style={ displayGoal ? { display:'block'} : {display : 'none'} }>
+                <div className="goal-body" style={ this.state.displayGoal ? { display:'block'} : {display : 'none'} }>
                     <p>{description}</p>
                     <p>{timeFrame}</p>
                 </div>
@@ -38,8 +47,8 @@ const Goal = ({goal}) => {
                 
                 
             </div>
-        
-    );
+        );
+    }
 }
 
 export default Goal;
