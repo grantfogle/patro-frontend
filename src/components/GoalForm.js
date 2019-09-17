@@ -9,12 +9,14 @@ class GoalForm extends Component {
         constructor(props) {
         super(props);
         this.state = {
+            id: 1,
+            name: '',
             description: '',
             attainability: '',
             habits: '',
-            timeFrame: '',
+            timeFrame: 'May 2020',
+            priority: ''
         };
-
     }
 
     handleInput = (e) => {
@@ -43,6 +45,12 @@ class GoalForm extends Component {
                 <p>For more information on goal setting practices, <a href='#'>James Clear offers a great guide</a></p>
                 <form onSubmit={(e) => e.preventDefault()}>
                     <div className='form-group'>
+                        <label for='formGroupExampleInput'><h4>Create a name for your goal:</h4></label>
+                        <input type='text' className='form-control' id='description' name='description'
+                         onChange={this.handleInput} placeholder='Example input' />
+                    </div>
+
+                    <div className='form-group'>
                         <label for='formGroupExampleInput'><h4>What is the goal you are trying to achieve?</h4></label>
                         <textarea type='text' className='form-control' id='description' name='description'
                          onChange={this.handleInput} placeholder='Example input' />
@@ -50,11 +58,11 @@ class GoalForm extends Component {
 
                     <div className='form-group'>
                         <label for='formGroupExampleInput2'><h4>Is your goal attainable within your time constraints?</h4></label>
-                        <textarea type='text' className='form-control' id='formGroupExampleInput2' name='attainability' placeholder='Another input' onChange={this.handleInput} />
+                        <input type='text' className='form-control' id='formGroupExampleInput2' name='attainability' placeholder='Another input' onChange={this.handleInput} />
                     </div>
                     <div className='form-group'>
                         <label for='formGroupExampleInput2'><h4>What specific behaviors/habits do you plan on changing to achieve your goal</h4></label>
-                        <textarea type='text' className='form-control' id='formGroupExampleInput2' name='habits' placeholder='Another input' onChange={this.handleInput} />
+                        <input type='text' className='form-control' id='formGroupExampleInput2' name='habits' placeholder='Another input' onChange={this.handleInput} />
                     </div>
                     <div className='form-group'>
                         <label for='formGroupExampleInput2'><h4>When do you hope to achieve this goal by?</h4></label>
@@ -70,7 +78,8 @@ class GoalForm extends Component {
 
 function mapStateToProps(state) {
   return {
-    goals: state.goals
+    goals: state.goals,
+    addGoal: state.addGoal
   }
 }
 

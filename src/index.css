@@ -15,7 +15,7 @@ code {
 
 .app {
   background-image: linear-gradient(to bottom right, #3498db, #f39c12);
-  height: 100vh;
+  min-height: 100vh;
   color: #fff;
 }
 

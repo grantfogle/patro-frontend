@@ -5,8 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import store from './store';
 import {Provider} from 'react-redux';
+import {getGoals} from './actions'
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 // import 'font-awesome/css/font-awesome.min.css';
+
+store.dispatch(getGoals);
 
 ReactDOM.render(
     <Provider store={store}>
