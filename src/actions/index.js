@@ -1,10 +1,16 @@
 export const ADD_GOAL = 'ADD_GOAL';
-export function addGoal(id, name, timeFrame) {
+export function addGoal(id, name, timeFrame, description, attainability, habits, ) {
     return ({
         type: ADD_GOAL,
         id: id,
         name: name,
-        timeFrame: timeFrame,
+        goal: {
+            timeFrame: timeFrame,
+            description: description,
+            attainability: attainability,
+            habits: habits,
+            complete: false,
+        }
     })
 }
 
