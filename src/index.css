@@ -88,11 +88,20 @@ code {
 .goal-header h3 {
   margin: 0;
   padding: 0;
+  width: 40%;
+}
+
+.goal-header p {
+  width: 30%;
 }
 .goal ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.goal-body {
+  margin: 2em;
 }
 
 .dashboard {
