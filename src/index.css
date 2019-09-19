@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* height: 100vh; */
 }
 
 code {
@@ -20,7 +19,6 @@ code {
 }
 
 .navigation {
-  /* background-color: #6F5499; */
   color: #fff;
   font-size: 1.4em;
   height: 45px;
@@ -28,7 +26,6 @@ code {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border-bottom: 1px solid #fff; */
 }
 
 .navigation p {
@@ -51,15 +48,9 @@ code {
   display: flex;
   align-items: center;
   color: white;
-  /* display: flex; */
-  /* justify-content: space-around;
-  width: 400px;
-  list-style-type: none; */
 }
 
 .navigation ul li:hover {
-  /* background-color: #fff; */
-  /* color: #6F5499; */
   text-decoration: none;
   border-bottom: 1px solid #fff;
 }
@@ -70,23 +61,13 @@ code {
   width: 60vw;
   min-width: 400px;
   margin: 0 auto;
-  /* border: solid 2px #2c3e50; */
-  /* height: 200px; */
-  /* background-color: #34495e; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
 }
 
 .goal {
-  /* width: 300px; */
-  /* height: 40px; */
   width: 100%;
   border-bottom: 1px solid #2c3e50;
-  /* border: 1px solid #dfdfdf; */
-  /* margin: 2em; */
   display: flex;
   flex-direction: column;
-  /* background-color: #6F5499; */
 }
 
 .goal:first-child {
@@ -107,7 +88,6 @@ code {
 .goal-header h3 {
   margin: 0;
   padding: 0;
-  /* border-bottom: 1px solid #dfdfdf; */
 }
 .goal ul {
   list-style-type: none;
@@ -117,24 +97,16 @@ code {
 
 .dashboard {
   height: 95vh;
-  /* background-image: url("https://source.unsplash.com/random/1600x800"); */
-  /* background-image: linear-gradient(-90deg, #3498db, #f39c12); */
   padding: 2em;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: #2c3e50; */
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* justify-content: space-between; */
 }
 
-.dashboard h1 {
-  /* margin: 0; */
-  /* margin-bottom: 2em; */
-}
 .dashboard-quote {
   width: 60vw;
   margin-bottom: 4em;
