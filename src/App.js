@@ -13,7 +13,7 @@ function App() {
       <div className="app">
       <Navigation />
       
-        <Route exact path="/" component={() => <Dashboard />} />
+        <Route exact path="/" key="main" component={() => <Dashboard />} />
         <Route exact path="/goals" component={() => <Goals />} />
         <Route exact path="/create-goal" component={() => <GoalForm />} />
         {/* return <ShowMovie movies={this.state.movies} {...props} editMovie={this.editMovie} handleInput={this.handleInput} /> */}

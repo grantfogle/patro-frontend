@@ -9,22 +9,20 @@ class GoalForm extends Component {
         constructor(props) {
         super(props);
         this.state = {
-            id: 1,
-            name: '',
+            id: 6,
+            name: 'goal name',
             description: '',
             attainability: '',
             habits: '',
             timeFrame: 'May 2020',
-            priority: ''
+            priority: 'medium'
         };
     }
 
     handleInput = (e) => {
         this.setState({ [e.target.name]: e.target.value })
-        console.log(this.state)
     }
     addGoal = () => {
-        console.log(this.state)
         this.props.addGoal(this.state)
         console.log(this.props.goals)
     }
@@ -68,7 +66,9 @@ class GoalForm extends Component {
                         <label for='formGroupExampleInput2'><h4>When do you hope to achieve this goal by?</h4></label>
                         <input type='text' className='form-control' id='formGroupExampleInput2' name="timeFrame" placeholder='Another input' onChange={this.handleInput} />
                     </div>
-                    <button type='submit' onClick={this.addGoal} className='btn btn-primary'>Create Goal</button>
+                    {/* <Link to="/"> */}
+                        <button type='submit' onClick={this.addGoal} className='btn btn-primary'>Create Goal</button>
+                    {/* </Link> */}
                 </form>
             </div>
         
