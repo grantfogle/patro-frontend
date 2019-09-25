@@ -11,7 +11,7 @@ let mockData = [{id: 1, name: "Get that bread", timeFrame: "January 2020", prior
 function goals(state = [mockData], action) {
     switch (action.type) {
         case 'ADD_GOAL':
-            return [...state[0], action.goal ];
+            return [...state, state.push(action.goal)];
         case 'GET_GOALS': 
             return action.goals;
         default:

@@ -27,19 +27,6 @@ class Goal extends Component {
                     <p>{description}</p>
                     <p>{timeFrame}</p>
                 </div>
-                {/* <div className="goal-body">
-                    hidden content, sub goals, smart measurements, complete goal and edit goal, so when you open the goal a
-                    a hover edit button will shop up
-
-                    <td>
-                    <ul>
-                        <li>Dynamic sub goals</li>
-                        <li>Dynamic sub goals</li>
-                        <li>Dynamic sub goals</li>
-                    </ul>
-                </td>
-                <p>{timeFrame}</p>
-                <p>Habits/Actions</p> */}
             </div>
         );
     }
